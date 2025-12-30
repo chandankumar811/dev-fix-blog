@@ -12,7 +12,7 @@ export default function Header() {
   const navigation = [
     { name: 'Problems', href: '/problems' },
     { name: 'Setups', href: '/guides' },
-    { name: 'Code Snippets', href: '/tools' },
+    // { name: 'Code Snippets', href: '/tools' },
     { name: 'About', href: '/about' },
   ]
 
