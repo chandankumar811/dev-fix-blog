@@ -1,18 +1,20 @@
-import { getAllBlogPosts } from '@/lib/mdx'
+import type { MetadataRoute } from 'next'
 
-export default function sitemap() {
-  const posts = getAllBlogPosts()
-
-  const urls = posts.map((post) => ({
-    url: `https://dev-fix-pro.vercel.app/problems/${post.slug}`,
-    lastModified: new Date(post.date),
-  }))
+export default function sitemap(): MetadataRoute.Sitemap {
+  const siteUrl = 'https://dev-fix-pro.vercel.app'
 
   return [
     {
-      url: 'https://dev-fix-pro.vercel.app/',
+      url: siteUrl,
       lastModified: new Date(),
     },
-    ...urls,
+    {
+      url: `${siteUrl}/problems`,
+      lastModified: new Date(),
+    },
+    {
+      url: `${siteUrl}/guides`,
+      lastModified: new Date(),
+    },
   ]
 }
