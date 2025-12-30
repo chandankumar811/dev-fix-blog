@@ -4,13 +4,13 @@ export default function sitemap() {
   const posts = getAllBlogPosts()
 
   const urls = posts.map((post) => ({
-    url: `http://localhost:3000/problem/${post.slug}`,
+    url: `https://dev-fix-pro.vercel.app/problems/${post.slug}`,
     lastModified: new Date(post.date),
   }))
 
   return [
     {
-      url: 'http://localhost:3000',
+      url: 'https://dev-fix-pro.vercel.app/',
       lastModified: new Date(),
     },
     ...urls,

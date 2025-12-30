@@ -4,6 +4,6 @@ export default function robots() {
       userAgent: '*',
       allow: '/',
     },
-    sitemap: 'http://localhost:3000',
+    sitemap: 'https://dev-fix-pro.vercel.app/sitemap.xml',
   }
 }
