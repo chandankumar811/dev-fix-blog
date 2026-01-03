@@ -4,7 +4,7 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-  metadataBase: new URL("http://localhost:3000"),
+  metadataBase: new URL("https://dev-fix-pro.vercel.app/"),
   title: {
     default: "DevFixPro – Fix Real Backend & Frontend Errors",
     template: "%s | DevFixPro",
